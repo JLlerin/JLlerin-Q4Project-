@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<title> Q4 Project</title>
+	<style type="text/css">
+
+		form{
+			align-content: center;
+		}
+		label{
+			align-content: center;
+		}
+		body{
+			background-color: peachpuff;
+
+		}
+		th{
+			align-content: center;
+		}
+	</style>
+</head>
+<body >
+	
+<h1 align="center"> Measurement Converter</h1>
+	<p align="center" id="today"></p>
+	<script>
+		
+function Compute()    {
+				var Millimeter = document.getElementById("Millimeter").value;
+				var Centimeters = Number(Millimeter) / 10;
+				
+	
+				
+				
+				window.alert("Millimeter: " + Centimeters + "\n"  ); 
+
+
+			}
+
+function fun() {
+	var Millimeter = document.getElementById("Millimeter").value;
+	var Meter = Number(Millimeter) * 0.001;
+
+
+	window.alert("Meter: " + Meter + "\n"   ); 
+}
+function Kilometers() {
+	var Millimeter = document.getElementById("Millimeter").value;
+	var Kilometers = Number(Millimeter)/  1000000;
+
+
+	window.alert("Kilometers: " + Kilometers + "\n"   ); 
+}
+</script>
+
+	<div align="center">
+<form align="center">
+		<label>Enter the millimeter value to be converted: <br></label>
+		<br>
+		<input type="Millimeter" name="Millimeter" id="Millimeter">
+	</form>
+
+	<br>
+	<button type="submit" class="btn btn-success btn-lg" onclick="Compute()" >Convert to Centimeters</button>
+		<button type="submit" class="btn btn-success btn-lg" onclick="fun()" >Convert to Meters</button>
+		<button type="submit" class="btn btn-success btn-lg" onclick="Kilometers()" >Convert to Kilometers</button>
+
+	<Br>
+
+	</script>
